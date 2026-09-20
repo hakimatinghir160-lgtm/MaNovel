@@ -1,0 +1,29 @@
+{
+  "name": "Message",
+  "type": "object",
+  "properties": {
+    "sender_email": {
+      "type": "string"
+    },
+    "receiver_email": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "is_read": {
+      "type": "boolean",
+      "default": false
+    },
+    "conversation_id": {
+      "type": "string",
+      "description": "sorted emails joined by _"
+    }
+  },
+  "required": [
+    "sender_email",
+    "receiver_email",
+    "content",
+    "conversation_id"
+  ]
+}

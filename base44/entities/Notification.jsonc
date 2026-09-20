@@ -1,0 +1,40 @@
+{
+  "name": "Notification",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Recipient email"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "new_chapter",
+        "new_follower",
+        "new_comment",
+        "new_like",
+        "system"
+      ],
+      "description": "Notification type"
+    },
+    "message": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string",
+      "description": "URL to navigate to"
+    },
+    "is_read": {
+      "type": "boolean",
+      "default": false
+    },
+    "sender_name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "type",
+    "message"
+  ]
+}

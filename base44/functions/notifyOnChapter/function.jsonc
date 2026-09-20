@@ -1,0 +1,15 @@
+{
+  "name": "notifyOnChapter",
+  "entry": "entry.ts",
+  "automations": [
+    {
+      "type": "entity",
+      "entity_name": "Chapter",
+      "event_types": [
+        "create"
+      ],
+      "is_active": true,
+      "name": "إشعار بنزول فصل جديد"
+    }
+  ]
+}

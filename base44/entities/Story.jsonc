@@ -1,0 +1,111 @@
+{
+  "name": "Story",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the story"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short synopsis of the story"
+    },
+    "cover_image": {
+      "type": "string",
+      "description": "URL of the cover image"
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "arabic",
+        "darija",
+        "french",
+        "english"
+      ],
+      "description": "Language of the story"
+    },
+    "genre": {
+      "type": "string",
+      "enum": [
+        "romance",
+        "drama",
+        "crime",
+        "psychological",
+        "horror",
+        "mafia",
+        "action",
+        "adventure",
+        "fantasy",
+        "sci_fi",
+        "school",
+        "tragedy",
+        "mystery",
+        "realistic",
+        "comedy",
+        "mixed"
+      ],
+      "description": "Primary genre"
+    },
+    "genres": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Multiple genres/tags for the story"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ongoing",
+        "completed",
+        "paused"
+      ],
+      "default": "ongoing"
+    },
+    "author_name": {
+      "type": "string",
+      "description": "Display name of the author"
+    },
+    "author_email": {
+      "type": "string",
+      "description": "Email of the author"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags for search"
+    },
+    "views": {
+      "type": "number",
+      "default": 0
+    },
+    "likes_count": {
+      "type": "number",
+      "default": 0
+    },
+    "chapters_count": {
+      "type": "number",
+      "default": 0
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_approved": {
+      "type": "boolean",
+      "default": true
+    },
+    "is_adult": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this story contains adult content (+18)"
+    }
+  },
+  "required": [
+    "title",
+    "language",
+    "genre"
+  ]
+}

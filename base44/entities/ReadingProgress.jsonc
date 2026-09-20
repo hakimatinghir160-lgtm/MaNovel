@@ -1,0 +1,27 @@
+{
+  "name": "ReadingProgress",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the reader"
+    },
+    "chapter_id": {
+      "type": "string",
+      "description": "ID of the chapter"
+    },
+    "story_id": {
+      "type": "string",
+      "description": "ID of the story"
+    },
+    "is_read": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "user_email",
+    "chapter_id",
+    "story_id"
+  ]
+}

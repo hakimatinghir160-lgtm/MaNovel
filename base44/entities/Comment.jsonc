@@ -1,0 +1,25 @@
+{
+  "name": "Comment",
+  "type": "object",
+  "properties": {
+    "story_id": {
+      "type": "string"
+    },
+    "chapter_id": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "author_name": {
+      "type": "string"
+    },
+    "author_email": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "story_id",
+    "content"
+  ]
+}

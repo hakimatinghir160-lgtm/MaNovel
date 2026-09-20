@@ -1,0 +1,36 @@
+{
+  "name": "Chapter",
+  "type": "object",
+  "properties": {
+    "story_id": {
+      "type": "string",
+      "description": "ID of the parent story"
+    },
+    "title": {
+      "type": "string",
+      "description": "Chapter title"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full chapter text content"
+    },
+    "chapter_number": {
+      "type": "number",
+      "description": "Order number of the chapter"
+    },
+    "is_published": {
+      "type": "boolean",
+      "default": true
+    },
+    "views": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "story_id",
+    "title",
+    "content",
+    "chapter_number"
+  ]
+}

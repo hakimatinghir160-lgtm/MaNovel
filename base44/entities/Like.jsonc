@@ -1,0 +1,16 @@
+{
+  "name": "Like",
+  "type": "object",
+  "properties": {
+    "story_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "story_id",
+    "user_email"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "User",
+  "type": "object",
+  "properties": {
+    "role": {
+      "type": "string",
+      "enum": [
+        "admin",
+        "user"
+      ],
+      "default": "user"
+    },
+    "bio": {
+      "type": "string",
+      "description": "User biography"
+    },
+    "avatar_url": {
+      "type": "string",
+      "description": "Avatar image URL"
+    },
+    "banner_url": {
+      "type": "string",
+      "description": "Profile banner image URL"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "Custom display name chosen by the user"
+    },
+    "username_last_changed": {
+      "type": "string",
+      "description": "ISO date of last display name change"
+    }
+  }
+}

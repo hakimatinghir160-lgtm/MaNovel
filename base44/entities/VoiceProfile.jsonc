@@ -1,0 +1,42 @@
+{
+  "name": "VoiceProfile",
+  "type": "object",
+  "properties": {
+    "label": {
+      "type": "string",
+      "description": "Profile label"
+    },
+    "male_voice_id": {
+      "type": "string",
+      "description": "ElevenLabs cloned male voice ID \u2014 used for the narrator and male characters"
+    },
+    "female_voice_id": {
+      "type": "string",
+      "description": "ElevenLabs cloned female voice ID \u2014 used for female characters"
+    },
+    "male_voice_name": {
+      "type": "string",
+      "description": "Display name of the cloned male voice"
+    },
+    "female_voice_name": {
+      "type": "string",
+      "description": "Display name of the cloned female voice"
+    },
+    "male_sample_url": {
+      "type": "string",
+      "description": "Reference audio sample URL used for cloning the male voice"
+    },
+    "female_sample_url": {
+      "type": "string",
+      "description": "Reference audio sample URL used for cloning the female voice"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether this profile is the active one used by the TTS engine"
+    }
+  },
+  "required": [
+    "label"
+  ]
+}
